@@ -12,6 +12,7 @@ const User = require("./models/user");
 const Message = require("./models/message");
 
 const app = express();
+app.set("trust proxy", 1);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -25,12 +26,12 @@ app.use(session({
     mongoUrl: process.env.MONGO_URI,
     collectionName: "sessions"
   }),
-  cookie: {
-    httpOnly: true,
-    secure: false,
-    sameSite: "lax",
-    maxAge: 24 * 60 * 60 * 1000
-  }
+cookie: {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: "lax",
+  maxAge: 24 * 60 * 60 * 1000
+}
 }));
 
 app.use(express.static(path.join(__dirname, "public")));
