@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/dashboard.js" defer></script>
+</head>
+<body class="dashboard-page">
+
+  <aside class="sidebar">
+    <a href="/" class="logo">my<span>folio.</span></a>
+
+    <p class="sidebar-label">WORKSPACE</p>
+
+    <a href="#overview" class="side-link active">⌂ Overview</a>
+    <a href="/#about" class="side-link">♡ My Profile</a>
+    <a href="/#education" class="side-link">✧ Education</a>
+    <a href="/#skills" class="side-link">◇ Skills</a>
+    <a href="/#projects" class="side-link">▧ Projects</a>
+
+    <div class="sidebar-bottom">
+      <a href="/" class="side-link">← View Portfolio</a>
+      <button id="logoutButton" class="logout-button">↪ Logout</button>
+    </div>
+  </aside>
+
+  <main class="dashboard-main" id="overview">
+    <div class="dashboard-top">
+      <div>
+        <span class="eyebrow">YOUR PERSONAL SPACE</span>
+        <h1>Student Dashboard ✿</h1>
+        <p>Here is your learning journey at a glance.</p>
+      </div>
+      <div class="profile-avatar" id="avatar">S</div>
+    </div>
+
+    <section class="welcome-card">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h2>Hello, <span id="studentName">Student</span>!</h2>
+      <p>Keep learning, keep creating and keep growing.</p>
+    </section>
+
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <span>✿</span>
+        <p>Full Name</p>
+        <h3 id="fullName">Loading...</h3>
+      </div>
+
+      <div class="dashboard-card">
+        <span>♡</span>
+        <p>Email Address</p>
+        <h3 id="studentEmail">Loading...</h3>
+      </div>
+
+      <div class="dashboard-card">
+        <span>◇</span>
+        <p>Course</p>
+        <h3 id="studentCourse">Loading...</h3>
+      </div>
+
+      <div class="dashboard-card">
+        <span>✧</span>
+        <p>College</p>
+        <h3 id="studentCollege">Loading...</h3>
+      </div>
+    </div>
+
+    <section class="dashboard-about">
+      <span class="eyebrow">ABOUT ME</span>
+      <h2>Your personal introduction</h2>
+      <p id="studentBio">Loading your profile...</p>
+      <p class="joined-text">Member since: <span id="joinedDate">Loading...</span></p>
+    </section>
+
+    <footer class="dashboard-footer">
+      Made with creativity ✿
+    </footer>
+  </main>
+</body>
+</html>

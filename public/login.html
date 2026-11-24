@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login | MyFolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</head>
+<body class="auth-page">
+
+  <div class="auth-decoration">
+    <div class="auth-orb"></div>
+    <div class="auth-orb orb-small"></div>
+  </div>
+  <canvas id="three-canvas" class="auth-canvas"></canvas>
+
+  <a href="/" class="logo auth-logo">my<span>folio.</span></a>
+
+  <div class="auth-card">
+    <a href="/" class="back-link">← Back to portfolio</a>
+    <span class="eyebrow">WELCOME BACK ✦</span>
+    <h1>Let's get you in.</h1>
+    <p class="auth-description">Sign in to explore your personal student dashboard.</p>
+
+    <form id="loginForm">
+      <label>Email address</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+
+      <button class="primary-btn full-btn" type="submit">Login to Dashboard ↗</button>
+      <p id="loginStatus" class="form-status"></p>
+    </form>
+
+    <p class="auth-footer">
+      Don't have an account? <a href="/register">Create one</a>
+    </p>
+  </div>
+</body>
+</html>

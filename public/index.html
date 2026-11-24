@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ekta | My Digital Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
+    <script type="module" src="scene.js"></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="/" class="logo">my<span>folio.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="/login.html" class="nav-button">Student Login ↗</a>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            WELCOME TO MY DIGITAL SPACE ✦
+        </span>
+
+        <h1>Hello, I'm <span>Ekta.</span></h1>
+
+        <h2>Student · Creator · Future Developer</h2>
+
+        <p>
+            I love exploring technology, creating beautiful digital
+            experiences and learning something new every day.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="primary-btn">
+                Explore My Work ↗
+            </a>
+
+            <a href="#about" class="secondary-btn">
+                Discover Me
+            </a>
+        </div>
+
+        <div class="hero-note">
+            <span class="status-dot"></span>
+            Open to learning and new opportunities
+        </div>
+
+    </div>
+
+    <!-- PHOTO AND 3D DESIGN -->
+    <div class="hero-art">
+
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+
+        <canvas id="three-canvas"></canvas>
+
+        <div class="profile-photo-card">
+
+            <div class="photo-sparkle sparkle-one">✦</div>
+            <div class="photo-sparkle sparkle-two">✿</div>
+
+            <img
+                src="profile-photo.jpeg"
+                alt="Ekta's profile photo"
+                class="profile-photo"
+            >
+
+            <div class="photo-caption">
+                <span class="photo-caption-label">
+                    A LITTLE INTRODUCTION
+                </span>
+
+                <strong>Hi, I'm Ekta!</strong>
+
+                <span>Learning · Creating · Growing</span>
+            </div>
+
+        </div>
+
+        <div class="floating-note note-one">
+            ✦ Creative mind
+        </div>
+
+        <div class="floating-note note-two">
+            Code & Coffee ☕
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="quick-highlights">
+
+    <div class="highlight-item">
+        <span class="highlight-icon">⌘</span>
+        <strong>Curious Learner</strong>
+        <small>Always exploring something new</small>
+    </div>
+
+    <div class="highlight-item">
+        <span class="highlight-icon">✧</span>
+        <strong>Creative Thinker</strong>
+        <small>Ideas turned into little projects</small>
+    </div>
+
+    <div class="highlight-item">
+        <span class="highlight-icon">♡</span>
+        <strong>Future Developer</strong>
+        <small>Building skills step by step</small>
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+
+    <div class="section-heading">
+        <span class="eyebrow">A LITTLE ABOUT ME</span>
+
+        <h2>More than just a student.</h2>
+
+        <p>
+            A little introduction to the person behind this portfolio.
+        </p>
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-card large-card">
+            <span class="card-icon">✿</span>
+
+            <h3>My Story</h3>
+
+            <p>
+                I am a college student interested in technology,
+                programming and creative problem-solving.
+                Every project is an opportunity to grow.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <span class="card-icon">♡</span>
+
+            <h3>My Interests</h3>
+
+            <p>
+                Web development, design, learning and creativity.<br>
+                
+            </p>
+        </div>
+
+        <div class="about-card">
+            <span class="card-icon">✧</span>
+
+            <h3>My Goal</h3>
+
+            <p>
+                To become a skilled developer and build meaningful projects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+
+    <div class="section-heading">
+        <span class="eyebrow">MY JOURNEY</span>
+        <h2>Education & Growth.</h2>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div>
+                <span class="eyebrow">CURRENT</span>
+
+                <h3>College Education</h3>
+
+                <p>
+                    Learning programming, computer science
+                    and web technologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div>
+                <span class="eyebrow">PREVIOUS</span>
+
+                <h3>School Education</h3>
+
+                <p>
+                    Building the foundation for my academic journey.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+
+    <div class="section-heading">
+        <span class="eyebrow">WHAT I'M LEARNING</span>
+        <h2>My creative toolkit.</h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>Web structure</p>
+        </div>
+
+        <div class="skill-card">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>Web styling</p>
+        </div>
+
+        <div class="skill-card">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Interactivity</p>
+        </div>
+
+        <div class="skill-card">
+            <span>04</span>
+            <h3>C</h3>
+            <p>Programming</p>
+        </div>
+
+        <div class="skill-card">
+            <span>05</span>
+            <h3>Node.js</h3>
+            <p>Backend learning</p>
+        </div>
+
+        <div class="skill-card">
+            <span>06</span>
+            <h3>MongoDB</h3>
+            <p>Database learning</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+
+    <div class="section-heading">
+        <span class="eyebrow">MY WORK</span>
+        <h2>Things I've created.</h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <article class="project-card project-pink">
+            <span class="project-number">PROJECT 01</span>
+
+            <div class="project-visual">✿</div>
+
+            <h3>Student Portfolio</h3>
+
+            <p>
+                A personal website showcasing my journey and projects.
+            </p>
+
+            <span class="project-tag">HTML · CSS · JS</span>
+        </article>
+
+        <article class="project-card project-lilac">
+            <span class="project-number">PROJECT 02</span>
+
+            <div class="project-visual">◈</div>
+
+            <h3>Login System</h3>
+
+            <p>
+                A student registration and authentication application.
+            </p>
+
+            <span class="project-tag">Node.js · MongoDB</span>
+        </article>
+
+        <article class="project-card project-blue">
+            <span class="project-number">PROJECT 03</span>
+
+            <div class="project-visual">✧</div>
+
+            <h3>Creative Web Design</h3>
+
+            <p>
+                An exploration of layouts, colors and interactive design.
+            </p>
+
+            <span class="project-tag">HTML · CSS</span>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- CREATIVE SECTION -->
+<section class="creative-section">
+
+    <div class="creative-panel">
+
+        <div class="creative-copy">
+
+            <span class="eyebrow">A WORK IN PROGRESS</span>
+
+            <h2>
+                Little by little, I'm building my own corner of the internet.
+            </h2>
+
+            <p>
+                From writing my first lines of code to creating
+                full-stack projects, I'm enjoying the process of
+                learning, experimenting and making each project better.
+            </p>
+
+            <a href="#projects" class="secondary-btn">
+                See what I'm creating ↗
+            </a>
+
+        </div>
+
+        <div class="creative-stickers">
+
+            <div class="sticker sticker-code">
+                &lt;/&gt;
+                <span>CODE</span>
+            </div>
+
+            <div class="sticker sticker-star">✦</div>
+
+            <div class="sticker sticker-heart">♡</div>
+
+            <div class="sticker sticker-idea">
+                ✧
+                <span>IDEAS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+
+    <div class="contact-box">
+
+        <span class="eyebrow">LET'S CONNECT</span>
+
+        <h2>Have something to say?</h2>
+
+        <p>
+            Send me a message through my portfolio.
+        </p>
+
+        <form id="contactForm">
+
+            <input
+                name="name"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button type="submit" class="primary-btn">
+                Send Message ↗
+            </button>
+
+            <p id="contactStatus" class="form-status"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+    <a href="/" class="logo">my<span>folio.</span></a>
+
+    <p>Made with creativity and curiosity ✿</p>
+
+    <p>© 2026 My Digital Portfolio</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | MyFolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</head>
+<body class="auth-page">
+
+  <div class="auth-decoration">
+    <div class="auth-orb"></div>
+    <div class="auth-orb orb-small"></div>
+  </div>
+  <canvas id="three-canvas" class="auth-canvas"></canvas>
+
+  <a href="/" class="logo auth-logo">my<span>folio.</span></a>
+
+  <div class="auth-card">
+    <a href="/" class="back-link">← Back to portfolio</a>
+    <span class="eyebrow">YOUR JOURNEY STARTS HERE ✦</span>
+    <h1>Create your space.</h1>
+    <p class="auth-description">Register to access your student dashboard.</p>
+
+    <form id="registerForm">
+      <label>Full name</label>
+      <input name="name" placeholder="Your full name" required>
+
+      <label>Email address</label>
+      <input type="email" name="email" placeholder="Your email" required>
+
+      <label>Course</label>
+      <input name="course" placeholder="Your course">
+
+      <label>College</label>
+      <input name="college" placeholder="Your college">
+
+      <label>Password</label>
+      <input type="password" name="password" minlength="8" placeholder="Minimum 8 characters" required>
+
+      <button class="primary-btn full-btn" type="submit">Create Account ↗</button>
+      <p id="registerStatus" class="form-status"></p>
+    </form>
+
+    <p class="auth-footer">
+      Already registered? <a href="/login">Login here</a>
+    </p>
+  </div>
+</body>
+</html>

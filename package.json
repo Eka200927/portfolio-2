@@ -1,0 +1,19 @@
+{
+  "name": "student-portfolio",
+  "version": "1.0.0",
+  "description": "3D pastel student portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.9.5",
+    "three": "^0.187.0"
+  }
+}
