@@ -1,0 +1,3 @@
+
+/api/*  https://portfolio-2-h57u.onrender.com/api/:splat  200
+/dashboard  https://portfolio-2-h57u.onrender.com/dashboard  200
